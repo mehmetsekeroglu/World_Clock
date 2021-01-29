@@ -1,3 +1,13 @@
+/**
+ * Digital World Clock
+ * Diünyanin istenilen bir bölgesine göre calisan bir digital saat olusturulacak,
+ * -Date objecti kullanilarak anlik saat ekranda gösterilir,
+ * -Set interval kullanilarak bu saatin her saniye basinda güncellenmesi saglanir,
+ * -timeZone isimleri bir arrayde tutulur ve her isim button ismi ve id'si olarak atanir, 
+ * -Atanan id'lere addEventListenir tanimlanir,
+ * -timeZone özelligi ve timeZone isimleri kullanilarak istenilen bölgenin anlik saati ekranda göstirilir
+ * -Bölge degisimlerinde önceki bölgenin saati clearInterval ile durdurulur, yeni bölgenin saati setInterval ile baslatirlir.
+ */
 let landes = [
     'Europe/Andorra',
     'Asia/Dubai',
@@ -144,10 +154,10 @@ let landes = [
 ];
 
 
-const clockElement = document.querySelector("#clock-section");
-const optionsElement = document.querySelector("#option-section");
-const headerElement = document.querySelector("#nav-header");
-const locationElement = document.querySelector("#current-location");
+const clockElement = document.querySelector("#clock-section");          //Saat
+const optionsElement = document.querySelector("#option-section");       //Button
+const headerElement = document.querySelector("#nav-header");            //Header
+const locationElement = document.querySelector("#current-location");    //Bölge Adi
 let clock;
 
 
