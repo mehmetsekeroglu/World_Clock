@@ -1,5 +1,5 @@
 function renderHeader() {
-    return`
+  return `
     <nav class="navbar navbar-dark bg-dark">
             <span class="navbar-brand mb-0 h1">World Clock</span>
           </nav>
@@ -7,15 +7,15 @@ function renderHeader() {
 }
 
 function renderEmptyClock() {
-    return `  <div id="clock">Please Select a Region</div>`
+  return `  <div id="clock">Please Select a Region</div>`
 }
 
 function renderCurrentClock(pLocation) {
-    clockElement.innerHTML = `<div id="clock">${createCurrentClock(pLocation)}</div>`
+  clockElement.innerHTML = `<div id="clock">${createCurrentClock(pLocation)}</div>`
 }
 
 function renderButtons() {
-    return `
+  return `
     <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Location

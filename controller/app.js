@@ -154,10 +154,10 @@ let landes = [
 ];
 
 
-const clockElement = document.querySelector("#clock-section");          //Saat
-const optionsElement = document.querySelector("#option-section");       //Button
-const headerElement = document.querySelector("#nav-header");            //Header
-const locationElement = document.querySelector("#current-location");    //Bölge Adi
+const clockElement = document.querySelector("#clock-section"); //Saat
+const optionsElement = document.querySelector("#option-section"); //Button
+const headerElement = document.querySelector("#nav-header"); //Header
+const locationElement = document.querySelector("#current-location"); //Bölge Adi
 let clock;
 
 
